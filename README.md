@@ -69,7 +69,7 @@ Congratulations, you have combined ASP.NET Core + EF Core. Continue to the requi
 4.	Your web page should look similar to the pictures below.
 
 ![Image of webpage 1](https://i.imgur.com/z7kyPpl.png)
-![Image of webpage 1](https://i.imgur.com/mGSArfm.png)
+![Image of webpage 2](https://i.imgur.com/mGSArfm.png)
 
 ## Step 10: Challenge Extra Credit - Making the Form work - Model Binding and OnPost()
 
@@ -77,12 +77,12 @@ Congratulations, you have combined ASP.NET Core + EF Core. Continue to the requi
 2.	That means, once the user selects a professor and hits submit, your app should find that professor in the database and then display the selected professor back on the web page.
 3.	See the picture below for an illustration of how your page should work.
 4.	This will require the following techniques:
-          * Model Binding
-          * Using the asp-for tag helper to facilitate Model Binding
-          * Adding code to your OnPost() method that will find the selected Professor
-          * Adding code to your Razor Page that will display the selected Professor
+               * Model Binding
+               * Using the asp-for tag helper to facilitate Model Binding
+               * Adding code to your OnPost() method that will find the selected Professor
+               * Adding code to your Razor Page that will display the selected Professor
 5.	Good luck!
 
-![Image of webpage 1](https://i.imgur.com/z7kyPpl.png)
+![Image of webpage 3](https://i.imgur.com/1m6v7e9.png)
 
 ## Submit your code to GitHub
