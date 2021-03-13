@@ -18,8 +18,15 @@ dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
 dotnet tool install --global dotnet-aspnet-codegenerator
 ```
 2.  Run the scaffolding command. Refer to the slides for the correct command. Note: You will have to make changes to the command to match your project.
-!! Consider this a warning.
-3.  Once scaffolding is complete, run your project and visit the newly scaffolded pages.
+     * **WARNING: If you see an error with adding Microsoft.VisualStudio.Web.CodeGeneration.Design or scaffolding. Attempt this fix or contact me:
+     
+     ```
+     dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.5
+     dotnet tool uninstall -g dotnet-aspnet-codegenerator 
+     dotnet tool install -g dotnet-aspnet-codegenerator --version 3.1.5
+     ```
+     
+4.  Once scaffolding is complete, run your project and visit the newly scaffolded pages.
       * Look at the Index page and ensure you have a list of all the professors.
       * Click “Create New” and make a new professor. Ensure that it is added to your list.
       * Click “Edit” and edit a professor. Ensure that your changes worked.
