@@ -59,3 +59,11 @@ dotnet tool install --global dotnet-aspnet-codegenerator
 2.   Refer to Figure 2 for an example. When the user hits Submit, the page should redirect back to the Index page.
 3.   Use a SelectList to allow the user to select from a drop down menu which Professor they want to teach the course.
             
+            
+![Figure 1](https://i.imgur.com/SnGPjXq.png)Figure 1: Details Page Listing Courses & Delete Button
+
+
+![Figure 2](https://i.imgur.com/xKhC5uF.png)Figure 2: Delete Course Page
+
+
+![Figure 3](https://i.imgur.com/P2B75to.png)Figure 2: Create Course Page
