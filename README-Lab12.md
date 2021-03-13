@@ -27,35 +27,35 @@ dotnet tool install --global dotnet-aspnet-codegenerator
 
 ## Step 2: Connect Related Data
 
-1. Add a Course entity class. 
-        * Each course should have a CourseId and a Description property.
-        * Each course is taught by ONE professor, and a professor may teach MANY courses. Put in the correct navigation properties.
-        * Add the DbSet<Course> property to your DbContext class.
-2. Modify your SeedData class:
-        * One professor should teach one course.
-        * Another professor should teach at least two courses.
-        * A third professor should teach no courses.
-        * Delete your Migrations/ folder and your database.db file. Re-run your migrations.
-3. **PAUSE**. Run your project. If you see build errors, debug! You should not see any changes on your website yet. Just make sure that it runs and looks OK.
+1.   Add a Course entity class. 
+     * Each course should have a CourseId and a Description property.
+     * Each course is taught by ONE professor, and a professor may teach MANY courses. Put in the correct navigation properties.
+     * Add the DbSet<Course> property to your DbContext class.
+2.   Modify your SeedData class:
+     * One professor should teach one course.
+     * Another professor should teach at least two courses.
+     * A third professor should teach no courses.
+     * Delete your Migrations/ folder and your database.db file. Re-run your migrations.
+3.   **PAUSE**. Run your project. If you see build errors, debug! You should not see any changes on your website yet. Just make sure that it runs and looks OK.
 
 ## Step 3: Display your courses (Read part of CRUD)
 
-1. Modify the Details page so that it shows each course for each professor.
-       * Alter the Page Model to bring in the courses using .Include()
-       * Alter the Razor Page to loop through each course and display them.
-       * See Figure 1 for an illustration.
+1.   Modify the Details page so that it shows each course for each professor.
+     * Alter the Page Model to bring in the courses using .Include()
+     * Alter the Razor Page to loop through each course and display them.
+     * See Figure 1 for an illustration.
 
 ## Step 4: Delete a course (Delete part of CRUD)
 
-1. Pick one of the two techniques shown in the slides and implement it.
-       * Technique one is to create a Delete button inside the Details page
-       * Technique two is to create a separate Delete page with a SelectList
-       * Implement BOTH techniques for **extra credit.**
-       * See Figures 1 and 2 for illustrations
+1.   Pick one of the two techniques shown in the slides and implement it.
+     * Technique one is to create a Delete button inside the Details page
+     * Technique two is to create a separate Delete page with a SelectList
+     * Implement BOTH techniques for **extra credit.**
+     * See Figures 1 and 2 for illustrations
 
 ## Step 5: Create a new course (Create part of CRUD)
 
-1. Create an AddCourse.cshtml Razor Page and AddCourse.cshtml.cs Page Model
-2. Refer to Figure 2 for an example. When the user hits Submit, the page should redirect back to the Index page.
-3. Use a SelectList to allow the user to select from a drop down menu which Professor they want to teach the course.
+1.   Create an AddCourse.cshtml Razor Page and AddCourse.cshtml.cs Page Model
+2.   Refer to Figure 2 for an example. When the user hits Submit, the page should redirect back to the Index page.
+3.   Use a SelectList to allow the user to select from a drop down menu which Professor they want to teach the course.
             
