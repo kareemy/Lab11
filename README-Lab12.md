@@ -1,7 +1,7 @@
 ## Your Name:
 
 
-# Extra CreditLab 12: Professor Web App Redux: Scaffolding and Related Data
+# Extra Credit Lab 12: Professor Web App Redux: Scaffolding and Related Data
 
 In this lab exercise you will perform scaffolding, add a second entity class to your project, and connect that class with your existing one. This process is known as connecting related data.
 
@@ -39,3 +39,23 @@ dotnet tool install --global dotnet-aspnet-codegenerator
 3. **PAUSE**. Run your project. If you see build errors, debug! You should not see any changes on your website yet. Just make sure that it runs and looks OK.
 
 ## Step 3: Display your courses (Read part of CRUD)
+
+1. Modify the Details page so that it shows each course for each professor.
+       * Alter the Page Model to bring in the courses using .Include()
+       * Alter the Razor Page to loop through each course and display them.
+       * See Figure 1 for an illustration.
+
+## Step 4: Delete a course (Delete part of CRUD)
+
+1. Pick one of the two techniques shown in the slides and implement it.
+       * Technique one is to create a Delete button inside the Details page
+       * Technique two is to create a separate Delete page with a SelectList
+       * Implement BOTH techniques for **extra credit.**
+       * See Figures 1 and 2 for illustrations
+
+## Step 5: Create a new course (Create part of CRUD)
+
+1. Create an AddCourse.cshtml Razor Page and AddCourse.cshtml.cs Page Model
+2. Refer to Figure 2 for an example. When the user hits Submit, the page should redirect back to the Index page.
+3. Use a SelectList to allow the user to select from a drop down menu which Professor they want to teach the course.
+            
